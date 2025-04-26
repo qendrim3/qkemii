@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Video Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Random Video Chat</h1>
+
+    <input type="text" id="username" placeholder="Username">
+    <select id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+    <button onclick="startChat()">Start</button>
+
+    <div id="video-grid">
+        <video id="localVideo" autoplay muted></video>
+        <video id="remoteVideo" autoplay></video>
+    </div>
+
+    <div class="controls">
+        <button onclick="next()">Next</button>
+        <button onclick="stop()">Stop</button>
+        <input type="text" id="messageInput" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send Message</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
